@@ -1,0 +1,9 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    max-width: 400px;
+    background-color: #e0e0e0;
+    margin: 0 2em 2em;
+    border-radius: 8px;
+}

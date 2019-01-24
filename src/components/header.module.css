@@ -1,0 +1,23 @@
+.logoMain {
+    font-weight: 600;
+    color: #9e9e9e;
+}
+
+.logoSecondary {
+    font-weight: 300;
+    color: #616161;
+}
+
+.navLink {
+    text-decoration: none;
+    color: inherit;
+    padding: 0 15px;
+    font-weight: normal;
+}
+.navLink:hover {
+    color: #b0bec5
+}
+
+.navText {
+    margin-bottom: 0;
+}
