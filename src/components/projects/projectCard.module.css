@@ -2,8 +2,27 @@
     display: flex;
     flex-direction: column;
     min-width: 400px;
-    max-width: 400px;
+    max-width: 450px;
     background-color: #e0e0e0;
-    margin: 0 2em 2em;
+    margin: 1em;
     border-radius: 8px;
+    position: relative;
+    
+}
+
+.innerCard {
+    padding: 3em 1em;
+}
+
+.actions {
+    top: .25em;
+    right: .75em;
+    display: flex;
+    position: absolute;
+}
+
+.actionIcon {
+    font-size: 1.5em;
+    color: #616161;
+    margin: 0.25em;
 }

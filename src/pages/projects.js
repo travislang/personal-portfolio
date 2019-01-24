@@ -9,6 +9,7 @@ const Projects = () => (
   <Layout>
     <SEO title="Page two" />
         <h3 style={{marginTop: '1em', textAlign: 'center'}}>Projects</h3>
+        <hr />
         <ProjectsPage />
   </Layout>
 )

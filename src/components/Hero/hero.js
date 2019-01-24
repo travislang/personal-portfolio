@@ -17,7 +17,9 @@ const Hero = () => (
         <div className={style.heroText}>
             <h1 style={{textAlign: 'center'}}>My name is Travis</h1>
             <h1 style={{ textAlign: 'center' }}>I am a software developer</h1>
-            <h2 style={{ color: '#616161', marginBottom: 0}}>I would love to connect
+            <hr />
+            <h2 style={{ color: '#616161', marginBottom: 0}}>
+                Lets connect
             </h2>
             <div className={style.iconsContainer}>
                 <a target='_blank' href='https://www.linkedin.com/in/travis-james-lang/'>
