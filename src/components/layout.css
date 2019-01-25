@@ -32,6 +32,15 @@ section,
 summary {
   display: block;
 }
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 95%;
+    background-color: #bdbdbd;
+    margin: 0;
+    height: 1px;
+}
 
 a {
   background-color: transparent;
