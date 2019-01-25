@@ -35,6 +35,10 @@ const ProjectCard = () => (
         </div>
         <div className={style.innerCard}>
             <Image />
+        </div>
+        <div className={style.innerText}>
+            <h2 className={style.cardTitle}>CoinDock</h2>
+            <p>A cross browser cryptocurrency tracking application with real time prices</p>
         </div> 
     </div>
 )
