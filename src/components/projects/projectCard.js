@@ -6,6 +6,7 @@ import style from './projectCard.module.css';
 
 import { FaGithub } from 'react-icons/fa';
 import { FaFolderOpen } from 'react-icons/fa';
+import { MdExitToApp } from 'react-icons/md';
 import { FaInfoCircle } from 'react-icons/fa';
 
 const Image = () => (
@@ -28,7 +29,7 @@ const Image = () => (
 const ProjectCard = () => (
     <div className={style.root}>
         <div className={style.actions}>
-            <FaFolderOpen className={style.actionIcon} />
+            <MdExitToApp className={style.actionIcon} />
             <FaGithub className={style.actionIcon} />
             <FaInfoCircle className={style.actionIcon} />
         </div>

@@ -1,14 +1,44 @@
 .root {
     min-height: calc(100vh - 82px);
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center
+    padding: 10px;
+    /* align-items: center */
+}
+
+.heroTextContainer {
+    display: flex;
+    flex-direction: column
+}
+
+.heroContactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .heroText {
+    font-weight: normal;
+    font-size: 2.5em;
+    margin: 0;
+    line-height: 1.25em;
+}
+.heroPara {
+    color: #607d8b;
+}
+
+.asideText {
+    font-size: calc(22vmin + 1em);
+    /* font-size: 10em; */
+    margin: 0;
+    line-height: 0.85em;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    padding-left: 0.2em;
+    color: #eeeeee;
     display: flex;
-    align-items: center;
-    flex-direction: column
+    justify-content: center;
 }
 
 .iconsContainer {
@@ -17,9 +47,9 @@
 
 .icon {
     font-size: 2em;
-    color: #03a9f4;
+    color: #1976d2;
     margin: 0.35em;
 }
 .icon:hover {
-    color: #0288d1;
+    color: #03a9f4;
 }

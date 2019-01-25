@@ -14,10 +14,15 @@ import { FaGithubSquare } from 'react-icons/fa';
 
 const Hero = () => (
     <div className={style.root}>
-        <div className={style.heroText}>
-            <h1 style={{textAlign: 'center'}}>My name is Travis</h1>
-            <h1 style={{ textAlign: 'center' }}>I am a software developer</h1>
-            <hr />
+        <div className={style.heroTextContainer}>
+            <h1 className={style.heroText}>My name is Travis & I'm</h1>
+            <h1 className={style.heroText}>a Full Stack Software Developer.</h1>
+            <p className={style.heroPara}>I am passionate about efficient development processes and creating great team dynamics. I am always excited about finding ways to grow my development skills with creative projects.  When I am not building things with software I enjoy being outdoors, camping, hiking, and rock climbing.</p>
+        </div>
+        <div className={style.heroContactContainer}>
+            <div className={style.asideText}>
+                ABOUT
+            </div>
             <h2 style={{ color: '#616161', marginBottom: 0}}>
                 Lets connect
             </h2>

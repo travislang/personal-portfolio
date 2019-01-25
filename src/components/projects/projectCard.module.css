@@ -23,6 +23,9 @@
 
 .actionIcon {
     font-size: 1.5em;
-    color: #616161;
+    color: #9e9e9e;
     margin: 0.25em;
+}
+.actionIcon:hover {
+    color: #616161;
 }
