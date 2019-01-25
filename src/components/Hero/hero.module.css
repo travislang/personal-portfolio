@@ -1,5 +1,5 @@
 .root {
-    min-height: calc(100vh - 82px);
+    min-height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,7 +30,6 @@
 
 .asideText {
     font-size: calc(22vmin + 1em);
-    /* font-size: 10em; */
     margin: 0;
     line-height: 0.85em;
     font-weight: 700;
