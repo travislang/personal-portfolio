@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import style from './projectCard.module.css';
+import ReactTooltip from 'react-tooltip'
 
 //icons
 import { FaGithub } from 'react-icons/fa';
@@ -55,9 +56,9 @@ class ProjectCard extends Component {
         return (
             <div className={style.root} style={{backgroundColor: backgroundColor}}>
                 <div className={style.actions}>
-                    <MdExitToApp className={style.actionIcon} />
-                    <FaGithub className={style.actionIcon} />
-                    <FaInfoCircle onClick={this.handleClick} className={style.actionIcon} />
+                    <MdExitToApp data-tip="View App" className={style.actionIcon} />
+                    <FaGithub data-tip="View Source on Github" className={style.actionIcon} />
+                    <FaInfoCircle data-tip="More Info" onClick={this.handleClick} className={style.actionIcon} />
                 </div>
                 {!this.state.moreInfo ?
                     <div>
@@ -89,9 +90,11 @@ class ProjectCard extends Component {
                         </p>
                     </div>
                 }
+                <ReactTooltip className={style.tooltipStyles} place="top" type="dark" effect="solid" />
             </div>
         )
     }
 }
+
 
 export default ProjectCard;

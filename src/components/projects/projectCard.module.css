@@ -67,3 +67,8 @@
 .cardLogo:hover {
     color: #1976d2;
 }
+
+.tooltipStyles {
+    font-size: 0.75em !important;
+    padding: 0 8px !important;
+}
