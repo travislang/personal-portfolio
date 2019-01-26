@@ -13,7 +13,7 @@ const Hero = () => (
     <div className={style.root}>
         <div className={style.contactTextContainer}>
             <h1 className={style.contactText}>Interested in talking further?</h1>
-            <p className={style.contactPara}>I am available by email or if you would prefer to connect on social media I would love that as well.  Click whatever form of contact you prefer below and I look forward to chatting further!</p>
+            <p className={style.contactPara}>I am available by email or if you would prefer to connect on social media I would love that as well.  Click whatever form of contact you prefer below and I look forward to chatting!</p>
         </div>
         <div className={style.contactContainer}>
             <div className={style.asideText}>
@@ -29,7 +29,6 @@ const Hero = () => (
                 <a href="mailto:tlang505@gmail.com">
                     <FaEnvelope className={style.icon} />
                 </a>
-                <FaMedium className={style.icon} />
 
             </div>
         </div>
