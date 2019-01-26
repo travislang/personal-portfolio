@@ -6,7 +6,7 @@ import ProjectsPage from '../components/projects/projectsPage';
 
 const Projects = ({data}) => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="Projects" />
         <div style={projectsTitle}>
             PROJECTS
         </div>
