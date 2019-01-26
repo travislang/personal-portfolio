@@ -33,6 +33,7 @@ const Layout = ({ children }) => (
           {children}
         </div>
         <footer style={{
+            minHeight: 40,
             backgroundColor: '#424242',
             textAlign: 'center',
             color: 'white',
@@ -41,16 +42,20 @@ const Layout = ({ children }) => (
             display: 'flex',
             }}>
             <div style={{flexBasis: '30%'}}>
-
             </div>
-                <div style={{ flexGrow: 1, flexBasis: '30%'}}>
+            <div style={{ flexGrow: 1, flexBasis: '30%'}}>
                 &copy; Travis Lang 2019
             </div>
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', flexBasis: '30%'}}>
-                <FaLinkedinIn style={{marginRight: 25}}/>
-                <FaGithub style={{marginRight: 25}}/>
-                <FaEnvelope style={{marginRight: 25}}/>
-                
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', flexBasis: '30%'}}>
+                <a target='_blank' style={{ marginRight: 25 }}href='https://www.linkedin.com/in/travis-james-lang/'>
+                    <FaLinkedinIn  />
+                </a>
+                <a target='_blank' style={{ marginRight: 25 }}href='https://github.com/travislang'>
+                    <FaGithub  />
+                </a>
+                <a href="mailto:tlang505@gmail.com" style={{ marginRight: 25 }}>
+                    <FaEnvelope  />
+                </a>
             </div>
         </footer>
       </>

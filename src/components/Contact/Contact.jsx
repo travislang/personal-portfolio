@@ -1,11 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import Layout from '../layout'
 import Image from '../image'
-import SEO from '../seo';
-import Avatar from './Avatar';
-import style from './hero.module.css';
+import style from './contact.module.css';
 
 import { FaLinkedin } from 'react-icons/fa';
 import { FaEnvelope } from 'react-icons/fa';
@@ -14,18 +11,14 @@ import { FaGithubSquare } from 'react-icons/fa';
 
 const Hero = () => (
     <div className={style.root}>
-        <div className={style.heroTextContainer}>
-            <h1 className={style.heroText}>My name is Travis & I'm</h1>
-            <h1 className={style.heroText}>a Full Stack Software Developer.</h1>
-            <p className={style.heroPara}>I am passionate about efficient development processes and creating great team dynamics. I am always excited about finding ways to grow my development skills with creative projects.  When I am not building things with software I enjoy being outdoors, camping, hiking, and rock climbing.</p>
+        <div className={style.contactTextContainer}>
+            <h1 className={style.contactText}>Interested in talking further?</h1>
+            <p className={style.contactPara}>I am available by email or if you would prefer to connect on social media I would love that as well.  Click whatever form of contact you prefer below and I look forward to chatting!</p>
         </div>
-        <div className={style.heroContactContainer}>
+        <div className={style.contactContainer}>
             <div className={style.asideText}>
-                ABOUT
+                CONTACT
             </div>
-            <h2 style={{ color: '#616161', marginBottom: 0}}>
-                Lets connect
-            </h2>
             <div className={style.iconsContainer}>
                 <a target='_blank' href='https://www.linkedin.com/in/travis-james-lang/'>
                     <FaLinkedin className={style.icon} />
@@ -36,8 +29,7 @@ const Hero = () => (
                 <a href="mailto:tlang505@gmail.com">
                     <FaEnvelope className={style.icon} />
                 </a>
-                <FaMedium className={style.icon}/>
-                
+
             </div>
         </div>
     </div>
