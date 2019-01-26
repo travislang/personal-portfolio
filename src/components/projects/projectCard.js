@@ -1,41 +1,15 @@
 import React, {Component} from 'react'
-import { Link } from 'gatsby'
-import { StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
 import style from './projectCard.module.css';
 import ReactTooltip from 'react-tooltip'
-
+import Img from 'gatsby-image'
 //icons
 import { FaGithub } from 'react-icons/fa';
-import { MdExitToApp } from 'react-icons/md';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { FaInfoCircle } from 'react-icons/fa';
 
 import { FaNodeJs } from 'react-icons/fa';
 import { FaReact } from 'react-icons/fa';
 import { FaJsSquare } from 'react-icons/fa';
-
-import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
-
-const Image = () => {
-    return (
-        <StaticQuery
-            query={graphql`
-        query {
-            placeholderImage: file(relativePath: { eq: "coindock-home.png" }) {
-            childImageSharp {
-                fluid(maxWidth: 300) {
-                ...GatsbyImageSharpFluid
-                }
-            }
-            }
-        }
-        `}
-            render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
-        />
-    )
-}
-
 
 
 class ProjectCard extends Component {
@@ -52,7 +26,9 @@ class ProjectCard extends Component {
     }
 
     render() {
-        const {project} = this.props;
+        const {project, image} = this.props;
+        console.log('image', image);
+        
         let backgroundColor;
         this.state.moreInfo ? backgroundColor = '#424242' : backgroundColor = '#e0e0e0';
         return (
@@ -69,7 +45,7 @@ class ProjectCard extends Component {
                 {!this.state.moreInfo ?
                     <div>
                         <div className={style.innerCard}>
-                            <Image />
+                            <Img style={{ boxShadow: '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)' }} fluid={image} />
                         </div>
                         <div className={style.innerText}>
                             <h2 className={style.cardTitle}>{project.title}</h2>

@@ -1,7 +1,7 @@
+
 const projects = [
     {
         title: 'CoinDock',
-        image: '../images/coindock-home.png',
         demo: 'https://coindock.herokuapp.com/',
         github: 'https://github.com/travislang/coindock',
         description: 'A cross browser cryptocurrency tracking application with real time prices',
@@ -11,7 +11,6 @@ const projects = [
     },
     {
         title: 'Todo App',
-        image: '../images/todo-app.png',
         demo: 'https://tasks-5.herokuapp.com/',
         github: 'https://github.com/travislang/todo-app', 
         description: 'A simple todo app that has database logic for persisting data',
@@ -21,7 +20,6 @@ const projects = [
     },
     {
         title: 'Feedback App',
-        image: '../images/feedback-app.png',
         demo: 'https://tasks-5.herokuapp.com/',
         github: 'https://github.com/travislang/feedback',
         description: 'A simple feedback form that has seperate views with state, and on submit the feeback is saved in a database',
@@ -31,4 +29,4 @@ const projects = [
     }
 ]
 
-module.exports = projects
+export default projects

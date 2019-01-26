@@ -1,12 +1,8 @@
 import React from 'react'
-import { Link } from 'gatsby'
-
-import Image from '../image'
 import style from './contact.module.css';
 
 import { FaLinkedin } from 'react-icons/fa';
 import { FaEnvelope } from 'react-icons/fa';
-import { FaMedium } from 'react-icons/fa';
 import { FaGithubSquare } from 'react-icons/fa';
 
 const Hero = () => (

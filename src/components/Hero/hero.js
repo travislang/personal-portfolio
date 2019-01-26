@@ -1,15 +1,8 @@
 import React from 'react'
-import { Link } from 'gatsby'
-
-import Layout from '../layout'
-import Image from '../image'
-import SEO from '../seo';
-import Avatar from './Avatar';
 import style from './hero.module.css';
 
 import { FaLinkedin } from 'react-icons/fa';
 import { FaEnvelope } from 'react-icons/fa';
-import { FaMedium } from 'react-icons/fa';
 import { FaGithubSquare } from 'react-icons/fa';
 
 const Hero = () => (
@@ -36,8 +29,6 @@ const Hero = () => (
                 <a href="mailto:tlang505@gmail.com">
                     <FaEnvelope className={style.icon} />
                 </a>
-                <FaMedium className={style.icon}/>
-                
             </div>
         </div>
     </div>

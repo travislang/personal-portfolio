@@ -1,21 +1,44 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import ProjectsPage from '../components/projects/projectsPage';
 
-const Projects = () => (
+const Projects = ({data}) => (
   <Layout>
     <SEO title="Page two" />
         <div style={projectsTitle}>
             PROJECTS
         </div>
-        {/* <h3 style={{marginTop: '1em', textAlign: 'center'}}>Projects</h3>
-        <hr /> */}
-        <ProjectsPage />
+        <ProjectsPage images={data} />
   </Layout>
 )
+
+export const query = graphql`
+  query {
+    image1: file(relativePath: { eq: "coindock-home.png" }) {
+        childImageSharp {
+            fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+            }
+        }
+    }
+    image2: file(relativePath: { eq: "todo-app.png" }) {
+        childImageSharp {
+            fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+            }
+        }
+    }
+    image3: file(relativePath: { eq: "feedback-app.png" }) {
+        childImageSharp {
+            fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+            }
+        }
+    }
+  }
+`
 
 const projectsTitle = {
     fontSize: 'calc(12vmin + 0.5em',
@@ -29,16 +52,5 @@ const projectsTitle = {
     justifyContent: 'center'
 
 }
-
-// font - size: calc(22vmin + 1em);
-// /* font-size: 10em; */
-// margin: 0;
-// line - height: 0.85em;
-// font - weight: 700;
-// letter - spacing: 0.2em;
-// padding - left: 0.2em;
-// color: #eeeeee;
-// display: flex;
-// justify - content: center;
 
 export default Projects

@@ -47,13 +47,13 @@ const Layout = ({ children }) => (
                 &copy; Travis Lang 2019
             </div>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', flexBasis: '30%'}}>
-                <a target='_blank' style={{ marginRight: 25 }}href='https://www.linkedin.com/in/travis-james-lang/'>
+                <a target='_blank' style={{ marginRight: '3vw' }}href='https://www.linkedin.com/in/travis-james-lang/'>
                     <FaLinkedinIn  />
                 </a>
-                <a target='_blank' style={{ marginRight: 25 }}href='https://github.com/travislang'>
+                <a target='_blank' style={{ marginRight: '3vw' }}href='https://github.com/travislang'>
                     <FaGithub  />
                 </a>
-                <a href="mailto:tlang505@gmail.com" style={{ marginRight: 25 }}>
+                <a href="mailto:tlang505@gmail.com" style={{ marginRight: '3vw' }}>
                     <FaEnvelope  />
                 </a>
             </div>
