@@ -39,7 +39,7 @@ const Header = ({ siteTitle }) => (
             </h4>
             <h4 style={{ margin: 0 }}>
                 <Link
-                    to="/skills"
+                    to="/skillsPage"
                     className={styles.navLink}
                 >
                     Skills
