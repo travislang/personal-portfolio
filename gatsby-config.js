@@ -26,5 +26,11 @@ module.exports = {
         display: `minimal-ui`,
       },
     },
+    {
+        resolve: `gatsby-plugin-google-analytics`,
+        options: {
+            trackingId: "UA-133286754-1",
+        },
+    },
   ],
 }
