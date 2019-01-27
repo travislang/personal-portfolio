@@ -72,3 +72,7 @@
     font-size: 0.75em !important;
     padding: 0 8px !important;
 }
+
+.imageContainer {
+    max-height: 250px;
+}

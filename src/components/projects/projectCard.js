@@ -45,7 +45,8 @@ class ProjectCard extends Component {
                 {!this.state.moreInfo ?
                     <div>
                         <div className={style.innerCard}>
-                            <Img style={{ boxShadow: '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)' }} fluid={image} />
+                            <Img imgStyle={{ maxHeight: 250,
+                                objectFit: 'contain'}} className={style.imageContainer} fluid={image} />
                         </div>
                         <div className={style.innerText}>
                             <h2 className={style.cardTitle}>{project.title}</h2>

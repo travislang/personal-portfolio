@@ -19,6 +19,9 @@ export default ({images}) => (
             else if(i === 2) {
                 imgData = images.image3.childImageSharp.fluid
             }
+            else if(i === 3) {
+                imgData = images.image4.childImageSharp.fluid
+            }
             return <ProjectCard image={imgData} project={project} />
         })}
     </div>
