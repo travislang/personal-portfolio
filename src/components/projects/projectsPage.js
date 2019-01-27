@@ -23,28 +23,3 @@ export default ({images}) => (
         })}
     </div>
 )
-export const query = graphql`
-  query {
-    image1: file(relativePath: { eq: "coindock-home.png" }) {
-        childImageSharp {
-            fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-            }
-        }
-    }
-    image2: file(relativePath: { eq: "todo-app.png" }) {
-        childImageSharp {
-            fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-            }
-        }
-    }
-    image3: file(relativePath: { eq: "feedback-app.png" }) {
-        childImageSharp {
-            fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-            }
-        }
-    }
-  }
-`
