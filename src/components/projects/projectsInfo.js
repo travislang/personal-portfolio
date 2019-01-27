@@ -10,6 +10,14 @@ const projects = [
         appInfo3: 'Checkout the readme on Github to see a full list of all technologies used.'
     },
     {
+        title: 'Weather App',
+        demo: 'https://github.com/travislang/react-native-weather-app',
+        github: 'https://github.com/travislang/react-native-weather-app',
+        description: 'A weather application that uses the users geolocation to get the current weather and then sets the background image to match the users current weather.',
+        appInfo2: 'This application is written using react Native and complies into native code, it is not a hybrid app displayed ina webview so it has no percievable loss in performance.',
+        appInfo3: 'I built this app to explore React Native and writing mobile applications.'
+    },
+    {
         title: 'Todo App',
         demo: 'https://tasks-5.herokuapp.com/',
         github: 'https://github.com/travislang/todo-app', 

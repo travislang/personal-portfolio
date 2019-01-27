@@ -16,21 +16,28 @@ const Projects = ({data}) => (
 
 export const query = graphql`
   query {
-    image1: file(relativePath: { eq: "coindock-home.png" }) {
+    image1: file(relativePath: { eq: "main-coindock.png" }) {
         childImageSharp {
             fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
             }
         }
     }
-    image2: file(relativePath: { eq: "todo-app.png" }) {
+    image2: file(relativePath: { eq: "weather-app.png" }) {
         childImageSharp {
             fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
             }
         }
     }
-    image3: file(relativePath: { eq: "feedback-app.png" }) {
+    image3: file(relativePath: { eq: "todo-app.png" }) {
+        childImageSharp {
+            fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+            }
+        }
+    }
+    image4: file(relativePath: { eq: "feedback-app.png" }) {
         childImageSharp {
             fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
