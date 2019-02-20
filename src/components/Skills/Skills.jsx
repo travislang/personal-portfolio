@@ -49,11 +49,12 @@ const Skills = () => (
         <ReactTooltip id='moreSkills' className={style.tooltipStyles} place="bottom" type="dark" effect="solid">
             <p style={{ textAlign: 'center' }}>More Skills:</p>
             <ul className={style.moreSkills}>
-                <li>Gatsby</li>
+                <li>GraphQL</li>
                 <li>React Native</li>
                 <li>SQL</li>
                 <li>PostgreSQL</li>
                 <li>MongoDB</li>
+                <li>Gatsby</li>
                 <li>jQuery</li>
                 <li>webSockets</li>
                 <li>Bootstrap</li>
