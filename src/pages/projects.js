@@ -30,14 +30,14 @@ export const query = graphql`
             }
         }
     }
-    image3: file(relativePath: { eq: "todo-app.png" }) {
+    image3: file(relativePath: { eq: "todo-mockup.png" }) {
         childImageSharp {
             fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
             }
         }
     }
-    image4: file(relativePath: { eq: "feedback-app.png" }) {
+    image4: file(relativePath: { eq: "feedback-mockup.png" }) {
         childImageSharp {
             fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
