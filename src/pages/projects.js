@@ -54,7 +54,7 @@ const projectsTitle = {
     fontWeight: 700,
     letterSpacing: '0.2em',
     paddingLeft: '0.2em',
-    color: '#e0e0e0',
+    color: '#eeeeee',
     display: 'flex',
     justifyContent: 'center'
 
