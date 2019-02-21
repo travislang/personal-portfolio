@@ -11,12 +11,12 @@ const projects = [
     },
     {
         title: 'ResponseGen',
-        demo: 'https://github.com/travislang/patent-app',
+        demo: 'https://responsegendemo.herokuapp.com',
         github: 'https://github.com/travislang/patent-app',
         description: 'A CMS and template generation application for patent attorneys',
         appInfo1: 'This is a full stack application built for a patent attorney that manages patent applications and generates response documents.',
         appInfo2: 'The user can create, edit, delete applications, select applicable templates, and in line edit those templates to suit the needs of the specific use case.',
-        appInfo3: 'Once a full document has been generated based on editable templates the user can export it into a complete docx format.'
+        appInfo3: 'Once a full document has been generated based on editable templates the user can export it into a complete docx format. To view a demo of the app click the link in the upper right and you can sign in with the "demo" for the username and password.'
     },
     {
         title: 'Weather App',
