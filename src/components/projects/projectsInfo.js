@@ -4,7 +4,7 @@ const projects = [
         title: 'CoinDock',
         demo: 'https://coindock.herokuapp.com/',
         github: 'https://github.com/travislang/coindock',
-        description: 'A cross browser cryptocurrency tracking application with real time prices',
+        description: 'A cross platform cryptocurrency tracking application with real time prices',
         appInfo1: 'This application uses webSockets to stream real time cryptocurrency prices to the user with the ability to create/delete portfolios, add/remove cryptocurrencies, drag and drop to organize cryptocurrencies within portfolios, and set price alerts on specific cryptocurrencies.',
         appInfo2: 'Alerts are constantly monitored on the server and when required an alert will be sent using Push Notifications. This is accomplished utalizing the Push API and service workers.',
         appInfo3: 'Checkout the readme on Github to see a full list of all technologies used.'
