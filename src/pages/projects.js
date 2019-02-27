@@ -37,7 +37,7 @@ export const query = graphql`
             }
         }
     }
-    image4: file(relativePath: { eq: "todo-mockup.png" }) {
+    image4: file(relativePath: { eq: "intelliflix-mockup.png" }) {
         childImageSharp {
             fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid

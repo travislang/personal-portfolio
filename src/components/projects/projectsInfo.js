@@ -28,13 +28,13 @@ const projects = [
         appInfo3: 'I built this app to explore React Native and writing mobile applications.'
     },
     {
-        title: 'Todo App',
-        demo: 'https://tasks-5.herokuapp.com/',
-        github: 'https://github.com/travislang/todo-app', 
-        description: 'A simple todo app that has database logic for persisting data',
-        appInfo1: 'This project may be a rite of passage for becoming a developer.',
-        appInfo2: 'The application allows a user to add new tasks, complete tasks, and delete tasks.  Tasks are automatically reordered to place completed tasks at the bottom of the list. All of the tasks and whether or not they have been completed is stored in a backend database.',
-        appInfo3: 'This application used jQuery. Checkout the readme on Github for more detailed information.'
+        title: 'IntelliFlix',
+        demo: 'https://intelliflix.herokuapp.com',
+        github: 'https://github.com/travislang/movie-sentiment', 
+        description: 'A movie information app that uses sentimental analysis of Twitter tweets to generate a rating',
+        appInfo1: 'This project is a full stack application that has search & filter functionality as well as similar and recommended movies.',
+        appInfo2: 'The application uses Twitter tweets to generate a rating based on sentimental analysis to give users a rating based on real peoples opinions',
+        appInfo3: 'It also uses GrapghQL for a backend API. Checkout the source on Github for more detailed information.'
     },
 ]
 
