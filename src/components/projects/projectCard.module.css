@@ -8,11 +8,14 @@
     margin: 1em;
     border-radius: 8px;
     position: relative;
-    
 }
 
 .innerCard {
     padding: 3em 1em 10px;
+}
+
+.innerCardVideo {
+    margin-top: 3em;
 }
 .innerCardMoreInfo {
     padding: 3em 1em 10px;
@@ -20,8 +23,8 @@
 }
 
 .actions {
-    top: .25em;
-    right: .75em;
+    top: 0.25em;
+    right: 0.75em;
     display: flex;
     position: absolute;
 }

@@ -1,50 +1,50 @@
 import React from 'react'
 
+import { graphql } from 'gatsby'
+
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import ProjectsPage from '../components/projects/projectsPage';
+import ProjectsPage from '../components/projects/projectsPage'
 
-const Projects = ({data}) => (
-  <Layout>
-    <SEO title="Projects" />
-        <div style={projectsTitle}>
-            PROJECTS
-        </div>
+const Projects = ({ data }) => (
+    <Layout>
+        <SEO title='Projects' />
+        <div style={projectsTitle}>PROJECTS</div>
         <ProjectsPage images={data} />
-  </Layout>
+    </Layout>
 )
 
 export const query = graphql`
-  query {
-    image1: file(relativePath: { eq: "main-coindock.png" }) {
-        childImageSharp {
-            fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+    query {
+        image1: file(relativePath: { eq: "main-coindock.png" }) {
+            childImageSharp {
+                fluid(maxWidth: 300) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        image2: file(relativePath: { eq: "responsegen-mockup.png" }) {
+            childImageSharp {
+                fluid(maxWidth: 300) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        image3: file(relativePath: { eq: "weather-app.png" }) {
+            childImageSharp {
+                fluid(maxWidth: 300) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        image4: file(relativePath: { eq: "intelliflix-mockup.png" }) {
+            childImageSharp {
+                fluid(maxWidth: 300) {
+                    ...GatsbyImageSharpFluid
+                }
             }
         }
     }
-    image2: file(relativePath: { eq: "responsegen-mockup.png" }) {
-        childImageSharp {
-            fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-            }
-        }
-    }
-    image3: file(relativePath: { eq: "weather-app.png" }) {
-        childImageSharp {
-            fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-            }
-        }
-    }
-    image4: file(relativePath: { eq: "intelliflix-mockup.png" }) {
-        childImageSharp {
-            fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-            }
-        }
-    }
-  }
 `
 
 const projectsTitle = {
@@ -56,8 +56,7 @@ const projectsTitle = {
     paddingLeft: '0.2em',
     color: '#eeeeee',
     display: 'flex',
-    justifyContent: 'center'
-
+    justifyContent: 'center',
 }
 
 export default Projects
