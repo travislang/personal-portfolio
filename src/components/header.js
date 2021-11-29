@@ -1,51 +1,42 @@
 import { Link } from 'gatsby'
 import React from 'react'
 
+import Toggle from './Toggle'
 import * as styles from './header.module.css'
 
-class Header extends React.Component {
-    render() {
-        return (
+const Header = () => {
+    return (
             <div
-                style={{
-                    background: `#fafafa`,
-                    minHeight: '40px',
-                }}
+                className={styles.container}
             >
                 <div
-                    style={{
-                        margin: `0 auto`,
-                        maxWidth: 960,
-                        padding: `0.5rem`,
-                        display: 'flex',
-                        alignItems: 'center',
-                    }}
+                    className={styles.innerContainer}
                 >
-                    <h2 style={{ margin: 0, flexGrow: 1 }}>
-                        <Link to='/' style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <h2 className={styles.logoContainer}>
+                        <Link to='/' className={styles.logoLink}>
                             <span className={styles.logoMain}>Travis</span>
                             <span className={styles.logoSecondary}>Lang</span>
                         </Link>
                     </h2>
-                    <h4 style={{ margin: 0 }}>
+                    <h4 className={styles.linkContainer}>
                         <Link to='/projects' className={styles.navLink}>
                             Projects
                         </Link>
                     </h4>
-                    <h4 style={{ margin: 0 }}>
+                    <h4 className={styles.linkContainer}>
                         <Link to='/skillsPage' className={styles.navLink}>
                             Skills
                         </Link>
                     </h4>
-                    <h4 style={{ margin: 0 }}>
+                    <h4 className={styles.linkContainer}>
                         <Link to='/contactPage' className={styles.navLink}>
                             Contact
                         </Link>
                     </h4>
+                    <Toggle />
                 </div>
             </div>
         )
-    }
 }
 
 export default Header
