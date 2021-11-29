@@ -1,5 +1,8 @@
+@import '../variables.scss';
+
 .root {
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 90px);
+    // min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,17 +27,18 @@
     line-height: 1.25em;
 }
 .heroPara {
-    color: #41729f;
+    color: $shadow-blue;
 }
 
 .asideText {
+    font-family: 'teko';
     font-size: calc(21vmin + 1em);
     margin: 0;
     line-height: 0.85em;
     font-weight: 700;
     letter-spacing: 0.2em;
     padding-left: 0.2em;
-    color: #eeeeee;
+    color: $aside-text;
     display: flex;
     justify-content: center;
 }

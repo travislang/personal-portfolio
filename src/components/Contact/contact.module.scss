@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .root {
     min-height: calc(100vh - 80px);
     display: flex;
@@ -8,13 +10,15 @@
 
 .contactTextContainer {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
 
 .asideText {
-    font-size: calc(19vmin + 1em);
-    margin: 0.1em 0;
+    font-family: 'teko';
+    font-size: calc(21vmin + 1em);
+    margin: 0.1em 0 0em;
     line-height: 0.85em;
+    letter-spacing: 0.2em;
     font-weight: 700;
     color: #eeeeee;
     display: flex;
@@ -28,7 +32,7 @@
     line-height: 1.25em;
 }
 .contactPara {
-    color: #607d8b;
+    color: $shadow-blue;
 }
 
 .contactContainer {
@@ -43,9 +47,9 @@
 
 .icon {
     font-size: 3.5em;
-    color: #1976d2;
+    color: $main-blue;
     margin: 0.35em;
 }
 .icon:hover {
-    color: #03a9f4;
+    color: $light-blue;
 }

@@ -1,5 +1,7 @@
+@import './variables.scss';
+
 .container {
-    background: #fafafa;
+    background-color: $light-background-color;
     min-height: 40px;
 }
 
@@ -11,12 +13,12 @@
     align-items: center;
 }
 
-.logoContainer { 
+.logoContainer {
     margin: 0px;
     flex-grow: 1;
 }
 
-.linkContainer { 
+.linkContainer {
     margin: 0px;
 }
 
@@ -27,10 +29,10 @@
 
 .logoSecondary {
     font-weight: 300;
-    color: #1976d2;
+    color: $main-blue;
 }
 
-.logoLink { 
+.logoLink {
     text-decoration: none;
     color: inherit;
 }
@@ -38,13 +40,21 @@
 .navLink {
     text-decoration: none;
     color: inherit;
-    padding: 0 2vw;
+    padding: 0 1vw;
     font-weight: normal;
 }
 .navLink:hover {
-    color: #1976d2;
+    color: $main-blue;
 }
 
 .navText {
     margin-bottom: 0;
+}
+
+.githubIcon {
+    font-size: 1.25em;
+    color: rgb(57, 159, 227);
+    margin-top: 5px;
+    margin-right: 15px;
+    margin-left: 35px;
 }

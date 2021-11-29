@@ -1,10 +1,15 @@
+@import '../variables.scss';
+
+*:focus {
+    outline: 0;
+}
+
 .root {
     display: flex;
     flex-direction: column;
     flex: 1 1 30%;
     min-width: 300px;
     max-width: 450px;
-    /* background-color: #e0e0e0; */
     margin: 1em;
     border-radius: 8px;
     position: relative;
@@ -36,7 +41,7 @@
     cursor: pointer;
 }
 .actionIcon:hover {
-    color: #1976d2;
+    color: $main-blue;
 }
 
 .innerText {
@@ -68,7 +73,7 @@
     padding-right: 0.25em;
 }
 .cardLogo:hover {
-    color: #1976d2;
+    color: $main-blue;
 }
 
 .tooltipStyles {

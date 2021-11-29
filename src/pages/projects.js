@@ -6,10 +6,12 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import ProjectsPage from '../components/projects/projectsPage'
 
+import { projectsTitle } from './projects.module.scss'
+
 const Projects = ({ data }) => (
     <Layout>
         <SEO title='Projects' />
-        <div style={projectsTitle}>PROJECTS</div>
+        <div className={projectsTitle}>PROJECTS</div>
         <ProjectsPage images={data} />
     </Layout>
 )
@@ -46,17 +48,5 @@ export const query = graphql`
         }
     }
 `
-
-const projectsTitle = {
-    fontSize: 'calc(12vmin + 0.5em',
-    margin: '0.25em 0',
-    lineHeight: '0.85em',
-    fontWeight: 700,
-    letterSpacing: '0.2em',
-    paddingLeft: '0.2em',
-    color: '#eeeeee',
-    display: 'flex',
-    justifyContent: 'center',
-}
 
 export default Projects

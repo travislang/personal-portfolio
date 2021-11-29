@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import ReactTooltip from 'react-tooltip'
-import * as style from './skills.module.css'
+import * as style from './skills.module.scss'
 
 import { FaJsSquare } from 'react-icons/fa'
 import { FaReact } from 'react-icons/fa'

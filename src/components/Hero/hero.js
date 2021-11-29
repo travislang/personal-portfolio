@@ -1,5 +1,5 @@
 import React from 'react'
-import * as style from './hero.module.css'
+import * as style from './hero.module.scss'
 
 import { FaLinkedin } from 'react-icons/fa'
 import { FaEnvelope } from 'react-icons/fa'
@@ -13,8 +13,8 @@ const Hero = () => (
             <p className={style.heroPara}>
                 I am passionate about efficient development processes and creating highly usable
                 products. I am always excited about finding ways to grow my development skills with
-                creative projects. When I am not building things with software I enjoy being
-                outdoors, camping, hiking, and rock climbing.
+                creative projects. When I am not building things with software I enjoy golfing,
+                being outdoors, camping and hiking.
             </p>
         </div>
         <div className={style.heroContactContainer}>

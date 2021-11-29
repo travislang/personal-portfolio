@@ -1,5 +1,5 @@
 import React from 'react'
-import * as style from './contact.module.css'
+import * as style from './contact.module.scss'
 
 import { FaLinkedin } from 'react-icons/fa'
 import { FaEnvelope } from 'react-icons/fa'
