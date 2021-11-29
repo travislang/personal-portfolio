@@ -1,12 +1,10 @@
 import React from 'react'
-import { graphql } from 'gatsby'
 import projects from './projectsInfo'
 
 import * as style from './projectsPage.module.css'
 import ProjectCard from './projectCard'
-import LedgerVideo from '../../assets/ledger-high-res.mp4'
 
-export default ({ images }) => (
+const ProjectPage = ({ images }) => (
     <div className={style.root}>
         {projects.map((project, i) => {
             if (project.title === 'Ledger Log') {
@@ -27,3 +25,5 @@ export default ({ images }) => (
         })}
     </div>
 )
+
+export default ProjectPage

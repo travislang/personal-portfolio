@@ -11,6 +11,13 @@ import { FaInfoCircle } from 'react-icons/fa'
 import { FaNodeJs } from 'react-icons/fa'
 import { FaReact } from 'react-icons/fa'
 import { FaJsSquare } from 'react-icons/fa'
+import { FaDocker } from 'react-icons/fa'
+import { FaAws } from 'react-icons/fa'
+import { SiMongodb } from 'react-icons/si'
+import { SiSocketdotio } from 'react-icons/si'
+import { SiPostgresql } from 'react-icons/si'
+import { SiReduxsaga } from 'react-icons/si'
+import { SiMaterialui } from 'react-icons/si'
 
 const ProjectCard = (props) => {
     const { project, image, videoUrl } = props
@@ -49,14 +56,7 @@ const ProjectCard = (props) => {
                                 fluid={image}
                             />
                         ) : (
-                            <div className='plyr__video-embed' id='player'>
-                                <iframe
-                                    src={videoUrl}
-                                    allowFullScreen
-                                    allowtransparency
-                                    allow='autoplay'
-                                />
-                            </div>
+                            <Video videoSrc={videoUrl} videoTitle={'project demo'} />
                         )}
                     </div>
                     <div className={style.innerText}>
@@ -65,9 +65,46 @@ const ProjectCard = (props) => {
                         <hr />
                         <h3 className={style.cardTitleSecondary}>Built Using</h3>
                         <div>
-                            <FaNodeJs className={style.cardLogo} />
-                            <FaReact className={style.cardLogo} />
-                            <FaJsSquare className={style.cardLogo} />
+                            {project.technologies.length ? (
+                                project.technologies.map((t) => {
+                                    if (t === 'react') {
+                                        return <FaReact className={style.cardLogo} />
+                                    }
+                                    if (t === 'docker') {
+                                        return <FaDocker className={style.cardLogo} />
+                                    }
+                                    if (t === 'mongo') {
+                                        return <SiMongodb className={style.cardLogo} />
+                                    }
+                                    if (t === 'sql') {
+                                        return <SiPostgresql className={style.cardLogo} />
+                                    }
+                                    if (t === 'js') {
+                                        return <FaJsSquare className={style.cardLogo} />
+                                    }
+                                    if (t === 'node') {
+                                        return <FaNodeJs className={style.cardLogo} />
+                                    }
+                                    if (t === 'sockets') {
+                                        return <SiSocketdotio className={style.cardLogo} />
+                                    }
+                                    if (t === 'saga') {
+                                        return <SiReduxsaga className={style.cardLogo} />
+                                    }
+                                    if (t === 'material-ui') {
+                                        return <SiMaterialui className={style.cardLogo} />
+                                    }
+                                    if (t === 'aws') {
+                                        return <FaAws className={style.cardLogo} />
+                                    }
+                                })
+                            ) : (
+                                <>
+                                    <FaNodeJs className={style.cardLogo} />
+                                    <FaReact className={style.cardLogo} />
+                                    <FaJsSquare className={style.cardLogo} />
+                                </>
+                            )}
                         </div>
                     </div>
                 </div>

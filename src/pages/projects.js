@@ -25,21 +25,21 @@ export const query = graphql`
                 }
             }
         }
-        image2: file(relativePath: { eq: "responsegen-mockup.png" }) {
+        image2: file(relativePath: { eq: "intelliflix-mockup.png" }) {
             childImageSharp {
                 fluid(maxWidth: 300) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
-        image3: file(relativePath: { eq: "weather-app.png" }) {
+        image3: file(relativePath: { eq: "responsegen-mockup.png" }) {
             childImageSharp {
                 fluid(maxWidth: 300) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
-        image4: file(relativePath: { eq: "intelliflix-mockup.png" }) {
+        image4: file(relativePath: { eq: "weather-app.png" }) {
             childImageSharp {
                 fluid(maxWidth: 300) {
                     ...GatsbyImageSharpFluid

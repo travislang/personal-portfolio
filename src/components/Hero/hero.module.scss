@@ -49,11 +49,11 @@
 
 .icon {
     font-size: 2em;
-    color: #1976d2;
+    color: $main-blue;
     margin: 0.35em;
 }
 .icon:hover {
-    color: #03a9f4;
+    color: $light-blue;
 }
 
 .noselect {
