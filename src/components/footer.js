@@ -3,6 +3,7 @@ import React from 'react'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 import { FaEnvelope } from 'react-icons/fa'
+import { FaStackOverflow } from 'react-icons/fa'
 
 import * as styles from './footer.module.scss'
 
@@ -12,6 +13,14 @@ const Footer = () => {
             <div style={{ flexBasis: '30%' }}></div>
             <div className={styles.authorContainer}>&copy; Travis Lang 2022</div>
             <div className={styles.linkContainer}>
+                <a
+                    target='_blank'
+                    rel='noreferrer'
+                    className={styles.iconMargin}
+                    href='https://stackoverflow.com/users/10106101/travis-james'
+                >
+                    <FaStackOverflow />
+                </a>
                 <a
                     target='_blank'
                     rel='noreferrer'
