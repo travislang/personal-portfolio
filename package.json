@@ -2,7 +2,7 @@
     "name": "portfolio-website",
     "private": true,
     "description": "Portfolio Website",
-    "version": "0.1.0",
+    "version": "1.0.1",
     "author": "Travis Lang",
     "dependencies": {
         "@fontsource/teko": "^4.5.0",

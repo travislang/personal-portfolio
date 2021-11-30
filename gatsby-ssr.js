@@ -62,8 +62,8 @@ const FallbackStyles = () => {
 }
 
 export const onRenderBody = ({ setPreBodyComponents, setHeadComponents }) => {
-    setHeadComponents(<FallbackStyles />)
-    setPreBodyComponents(<MagicScriptTag />)
+    setHeadComponents(<FallbackStyles key="fallback-style" />)
+    setPreBodyComponents(<MagicScriptTag key="magic-script" />)
 }
 
 export const wrapPageElement = ({ element }) => {
