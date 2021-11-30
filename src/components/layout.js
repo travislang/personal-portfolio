@@ -7,6 +7,7 @@ import Footer from './footer'
 
 import '@fontsource/teko/600.css'
 import './layout.css'
+import * as style from './Hero/hero.module.scss'
 
 const Layout = ({ children }) => (
     <StaticQuery
@@ -22,13 +23,8 @@ const Layout = ({ children }) => (
         render={(data) => (
             <>
                 <Header />
-                <div
-                    style={{
-                        margin: `0 auto`,
-                        maxWidth: 960,
-                    }}
-                >
-                    {children}
+                <div className={style.rootContainer}>
+                    <div className={style.widthContainer}>{children}</div>
                 </div>
                 <Footer />
             </>

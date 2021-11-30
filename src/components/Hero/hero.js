@@ -19,7 +19,7 @@ const Hero = () => (
         </div>
         <div className={style.heroContactContainer}>
             <div className={`${style.asideText} ${style.noselect}`}>ABOUT</div>
-            <h2 style={{ color: '#616161', marginBottom: 0 }}>Lets connect</h2>
+            <h2 className={style.connectText}>Lets connect</h2>
             <div className={style.iconsContainer}>
                 <a
                     target='_blank'

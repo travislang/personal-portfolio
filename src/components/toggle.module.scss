@@ -1,5 +1,7 @@
 @import './variables.scss';
 
+// var(--color-primary);
+
 .container {
     display: flex;
     flex-direction: row;
@@ -9,7 +11,7 @@
 
 .switchContainer {
     border-radius: 15px;
-    border: 1px solid #8a8a8a;
+    background-color: rgb(210, 210, 210);
     width: 45px;
     height: 20px;
     margin: 0px 3px;
@@ -22,7 +24,8 @@
     width: 14px;
     height: 14px;
     border-radius: 7px;
-    background-color: $main-blue;
+    background-color: $light-background-color;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
@@ -33,4 +36,36 @@
 
 .yellow {
     color: $yellow;
+}
+
+.switchRight {
+    animation-duration: 0.3s;
+    animation-name: slideRight;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.switchLeft {
+    animation-duration: 0.3s;
+    animation-name: slideLeft;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideRight {
+    from {
+        margin-left: 0px;
+    }
+
+    to {
+        margin-left: 23px;
+    }
+}
+@keyframes slideLeft {
+    from {
+        margin-left: 23px;
+    }
+
+    to {
+        margin-left: 0px;
+    }
 }
