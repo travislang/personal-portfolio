@@ -18,10 +18,10 @@ const Hero = () => (
         <div className={style.contactContainer}>
             <div className={style.asideText}>CONTACT</div>
             <div className={style.iconsContainer}>
-                <a target='_blank' href='https://www.linkedin.com/in/travis-james-lang/'>
+                <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/travis-james-lang/'>
                     <FaLinkedin className={style.icon} />
                 </a>
-                <a target='_blank' href='https://github.com/travislang'>
+                <a target='_blank' rel='noreferrer' href='https://github.com/travislang'>
                     <FaGithubSquare className={style.icon} />
                 </a>
                 <a href='mailto:tlang505@gmail.com'>

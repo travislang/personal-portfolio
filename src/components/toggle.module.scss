@@ -1,54 +1,63 @@
 @import './variables.scss';
 
-// var(--color-primary);
-
 .container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 2px;
+    margin-top: 1px;
 }
 
 .switchContainer {
     border-radius: 15px;
-    background-color: rgb(210, 210, 210);
-    width: 45px;
-    height: 20px;
-    margin: 0px 3px;
-    padding: 0px 3px;
+    border: 1px solid $switch-color;
+    width: 55px;
+    height: 25px;
+    padding: 0px 4px 0px 3px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
 
 .innerSwitch {
-    width: 14px;
-    height: 14px;
-    border-radius: 7px;
-    background-color: $light-background-color;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 8px;
+    background-color: $switch-color;
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
+.innerRight {
+    margin-left: 31px;
+}
+
 .icon {
-    color: #c9c9c9;
+    color: $switch-color;
     font-size: 0.85em;
 }
 
 .yellow {
     color: $yellow;
 }
+.moonWhite {
+    color: $moon-white;
+}
 
-.switchRight {
+.animateRight {
     animation-duration: 0.3s;
     animation-name: slideRight;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    animation-timing-function: ease;
 }
-.switchLeft {
+.animateLeft {
     animation-duration: 0.3s;
     animation-name: slideLeft;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    animation-timing-function: ease;
 }
 
 @keyframes slideRight {
@@ -57,12 +66,12 @@
     }
 
     to {
-        margin-left: 23px;
+        margin-left: 31px;
     }
 }
 @keyframes slideLeft {
     from {
-        margin-left: 23px;
+        margin-left: 31px;
     }
 
     to {

@@ -47,7 +47,6 @@ const MagicScriptTag = () => {
 }
 
 const FallbackStyles = () => {
-    // Create a string holding each CSS variable:
     /*
     `--color-text: black;
     --color-background: white;`
@@ -59,7 +58,7 @@ const FallbackStyles = () => {
 
     const wrappedInSelector = `html { ${cssVariableString} }`
 
-    return <style x='x'>{wrappedInSelector}</style>
+    return <style>{wrappedInSelector}</style>
 }
 
 export const onRenderBody = ({ setPreBodyComponents, setHeadComponents }) => {

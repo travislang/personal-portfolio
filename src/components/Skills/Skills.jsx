@@ -17,9 +17,9 @@ import ReduxLogo from './reduxLogo'
 
 const Skills = () => (
     <div className={style.root}>
-        <div className={style.skillsContainer}>
-            <h1>Languages & Tools</h1>
-            <div className={style.skillsContainer}>
+        <div>
+            <h1 className={style.headerText}>Languages & Tools</h1>
+            <div>
                 <FaJsSquare data-tip='JavaScript' className={style.skillIcon} />
                 <FaReact data-tip='React' className={style.skillIcon} />
                 <ReduxLogo data-tip='Redux' className={style.skillIcon} />
@@ -34,9 +34,9 @@ const Skills = () => (
         </div>
         <div className={style.asideText}>SKILLS</div>
         <div>
-            <h1 style={{ textAlign: 'end', marginBottom: 0 }}>Workflow & Processes</h1>
+            <h1 className={style.text}>Workflow & Processes</h1>
             <div className={style.listContainer}>
-                <ul className={style.skillsList}>
+                <ul>
                     <li>Agile Development & Scrum</li>
                     <li>Github development processes</li>
                     <li>Unit & Integration Testing</li>

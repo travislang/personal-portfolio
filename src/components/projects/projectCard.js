@@ -1,8 +1,12 @@
-import React, { useState } from 'react'
-import * as style from './projectCard.module.scss'
+import React, { useState, useContext } from 'react'
+import { ThemeContext } from '../ThemeContext'
+
 import ReactTooltip from 'react-tooltip'
 import Img from 'gatsby-image'
 import Video from './video'
+
+import * as style from './projectCard.module.scss'
+
 //icons
 import { FaGithub } from 'react-icons/fa'
 import { FaExternalLinkAlt } from 'react-icons/fa'
@@ -19,20 +23,33 @@ import { SiPostgresql } from 'react-icons/si'
 import { SiReduxsaga } from 'react-icons/si'
 import { SiMaterialui } from 'react-icons/si'
 
+const MORE_INFO_COLORS = {
+        dark: '#5f5e5e',
+        light: '#424242',
+    }
+
 const ProjectCard = (props) => {
     const { project, image, videoUrl } = props
 
+    const { colorMode } = useContext(ThemeContext)
     const [moreInfo, setMoreInfo] = useState(false)
 
     const handleClick = () => {
         setMoreInfo((s) => !s)
     }
 
-    let backgroundColor
-    moreInfo ? (backgroundColor = '#424242') : (backgroundColor = '#e0e0e0')
+    const backgroundStyle = {}
+
+    if( moreInfo ) {
+        if(colorMode) {
+            backgroundStyle.backgroundColor = MORE_INFO_COLORS[colorMode]
+        } else {
+            backgroundStyle.backgroundColor = MORE_INFO_COLORS['light']
+        }
+    }
 
     return (
-        <div className={style.root} style={{ backgroundColor: backgroundColor }}>
+        <div className={style.root} style={backgroundStyle}>
             <div className={style.actions}>
                 <a href={project.demo} target='_blank' rel='noreferrer'>
                     <FaExternalLinkAlt data-tip='View App' className={style.actionIcon} />

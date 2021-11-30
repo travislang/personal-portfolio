@@ -1,31 +1,39 @@
 export const COLORS = {
     text: {
         light: 'hsl(0deg, 0%, 10%)', // white
-        dark: 'hsl(0deg, 0%, 100%)', // near-black
+        dark: 'hsl(0deg, 0%, 100%)', // black
+    },
+    cardText: {
+        light: '#1b1b1b', //black
+        dark: '#f7f7f7', //white
     },
     blueText: {
         light: '#71747d',
-        dark: '#8b8f9f',
+        dark: '#8b8f9f', 
     },
     background: {
         light: '#fcfcfc',
-        dark: '#2e2e2e',
+        dark: '#2e2e2e', //$dark-grey
+    },
+    cardBackground: {
+        light: '#e0e0e0',
+        dark: '#4b4b4b',
+    },
+    switchColor: {
+        light: '#c6c5c5', //$switch-color
+        dark: '#fcfcfc',
     },
     primary: {
-        light: '#254ccb',
-        dark: '#254ccb',
+        light: '#254ccb', //$main-blue
+        dark: '#254ccb', //$main-blue
     },
     secondary: {
-        light: 'rgb(57, 159, 227)',
-        dark: 'rgb(57, 159, 227)',
+        light: 'rgb(57, 159, 227)', //$light-blue
+        dark: 'rgb(57, 159, 227)', //$light-blue
     },
     asideText: {
         light: '#eeeeee',
         dark: '#3f3f3f',
-    },
-    gray: {
-        light: '#303636',
-        dark: '#303636',
     },
 }
 

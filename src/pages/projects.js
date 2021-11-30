@@ -6,13 +6,15 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import ProjectsPage from '../components/projects/projectsPage'
 
-import { projectsTitle } from './projects.module.scss'
+import { root, projectsTitle } from './projects.module.scss'
 
 const Projects = ({ data }) => (
     <Layout>
         <SEO title='Projects' />
         <div className={projectsTitle}>PROJECTS</div>
-        <ProjectsPage images={data} />
+        <div className={root}>
+            <ProjectsPage images={data} />
+        </div>
     </Layout>
 )
 

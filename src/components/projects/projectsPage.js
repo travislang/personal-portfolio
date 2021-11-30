@@ -1,11 +1,10 @@
 import React from 'react'
 import projects from './projectsInfo'
 
-import * as style from './projectsPage.module.css'
 import ProjectCard from './projectCard'
 
 const ProjectPage = ({ images }) => (
-    <div className={style.root}>
+    <>
         {projects.map((project, i) => {
             if (project.title === 'Ledger Log') {
                 return <ProjectCard videoUrl={project.videoUrl} project={project} />
@@ -23,7 +22,7 @@ const ProjectPage = ({ images }) => (
                 return <ProjectCard image={imgData} project={project} />
             }
         })}
-    </div>
+    </>
 )
 
 export default ProjectPage

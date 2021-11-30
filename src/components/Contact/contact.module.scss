@@ -20,7 +20,7 @@
     line-height: 0.85em;
     letter-spacing: 0.2em;
     font-weight: 700;
-    color: #eeeeee;
+    color: var(--color-asideText);
     display: flex;
     justify-content: center;
     -webkit-touch-callout: none;
@@ -36,9 +36,10 @@
     font-size: 2.5em;
     margin: 0;
     line-height: 1.25em;
+    color: var(--color-text);
 }
 .contactPara {
-    color: $shadow-blue;
+    color: var(--color-blueText);
 }
 
 .contactContainer {
