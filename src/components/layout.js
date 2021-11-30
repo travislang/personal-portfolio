@@ -20,13 +20,13 @@ const Layout = ({ children }) => (
             }
         `}
         render={(data) => (
-            <>
+            <div className={style.main}>
                 <Header />
                 <div className={style.rootContainer}>
                     <div className={style.widthContainer}>{children}</div>
                 </div>
                 <Footer />
-            </>
+            </div>
         )}
     />
 )

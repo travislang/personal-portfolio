@@ -21,8 +21,6 @@ const Toggle = () => {
 
     if (!colorMode) return null
 
-    console.log('switchClasses', switchClasses)
-
     const handleClick = () => {
         setSwitchClasses(arr => {
             let newArr = arr.filter(className => {
