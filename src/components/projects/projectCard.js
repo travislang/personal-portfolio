@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import { ThemeContext } from '../ThemeContext'
 
 import ReactTooltip from 'react-tooltip'
@@ -24,24 +24,39 @@ import { SiReduxsaga } from 'react-icons/si'
 import { SiMaterialui } from 'react-icons/si'
 
 const MORE_INFO_COLORS = {
-        dark: '#5f5e5e',
-        light: '#424242',
-    }
+    dark: '#5f5e5e',
+    light: '#424242',
+}
 
 const ProjectCard = (props) => {
     const { project, image, videoUrl } = props
 
     const { colorMode } = useContext(ThemeContext)
     const [moreInfo, setMoreInfo] = useState(false)
+    const [classNames, setClassNames] = useState([style.root])
+
+    // useEffect(() => {
+    //
+    //     console.log('classnames', classNames)
+    // }, [])
+
+    console.log('classnames 2', classNames)
 
     const handleClick = () => {
+        if (moreInfo) {
+            setClassNames((arr) => arr.filter((c) => c !== style.flipAnimation))
+            setClassNames((arr) => [...arr, style.flipAnimationBack])
+        } else {
+            setClassNames((arr) => arr.filter((c) => c !== style.flipAnimationBack))
+            setClassNames((arr) => [...arr, style.flipAnimation])
+        }
         setMoreInfo((s) => !s)
     }
 
     const backgroundStyle = {}
 
-    if( moreInfo ) {
-        if(colorMode) {
+    if (moreInfo) {
+        if (colorMode) {
             backgroundStyle.backgroundColor = MORE_INFO_COLORS[colorMode]
         } else {
             backgroundStyle.backgroundColor = MORE_INFO_COLORS['light']
@@ -49,7 +64,7 @@ const ProjectCard = (props) => {
     }
 
     return (
-        <div className={style.root} style={backgroundStyle}>
+        <div className={classNames.join(' ')} style={backgroundStyle}>
             <div className={style.actions}>
                 <a href={project.demo} target='_blank' rel='noreferrer'>
                     <FaExternalLinkAlt data-tip='View App' className={style.actionIcon} />

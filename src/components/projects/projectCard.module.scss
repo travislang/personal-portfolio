@@ -89,3 +89,39 @@
 .imageContainer {
     max-height: 250px;
 }
+
+.flipAnimation {
+    animation-duration: 0.5s;
+    animation-name: flip;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    // animation:spin 4s linear infinite;
+}
+
+.flipAnimationBack {
+    animation-duration: 0.5s;
+    animation-name: flipBack;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    // animation:spin 4s linear infinite;
+}
+
+@keyframes flip {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes flipBack {
+    from {
+        transform: rotateY(360deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+}
