@@ -35,21 +35,14 @@ const ProjectCard = (props) => {
     const [moreInfo, setMoreInfo] = useState(false)
     const [classNames, setClassNames] = useState([style.root])
 
-    // useEffect(() => {
-    //
-    //     console.log('classnames', classNames)
-    // }, [])
-
-    console.log('classnames 2', classNames)
-
     const handleClick = () => {
-        if (moreInfo) {
-            setClassNames((arr) => arr.filter((c) => c !== style.flipAnimation))
-            setClassNames((arr) => [...arr, style.flipAnimationBack])
-        } else {
-            setClassNames((arr) => arr.filter((c) => c !== style.flipAnimationBack))
-            setClassNames((arr) => [...arr, style.flipAnimation])
-        }
+        // if (moreInfo) {
+        //     setClassNames((arr) => arr.filter((c) => c !== style.flipAnimation))
+        //     setClassNames((arr) => [...arr, style.flipAnimationBack])
+        // } else {
+        //     setClassNames((arr) => arr.filter((c) => c !== style.flipAnimationBack))
+        //     setClassNames((arr) => [...arr, style.flipAnimation])
+        // }
         setMoreInfo((s) => !s)
     }
 
