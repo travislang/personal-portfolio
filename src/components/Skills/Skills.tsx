@@ -10,6 +10,7 @@ import { FaGit } from 'react-icons/fa'
 import { FaNpm } from 'react-icons/fa'
 import { FaAws } from 'react-icons/fa'
 import { SiMongodb } from 'react-icons/si'
+import { SiTypescript } from 'react-icons/si'
 
 import { MdFormatListBulleted } from 'react-icons/md'
 
@@ -21,13 +22,14 @@ const Skills = () => (
             <h1 className={style.headerText}>Languages & Tools</h1>
             <div>
                 <FaJsSquare data-tip='JavaScript' className={style.skillIcon} />
+                <SiTypescript data-tip='TypeScript' className={style.skillIcon} />
                 <FaReact data-tip='React' className={style.skillIcon} />
                 <ReduxLogo data-tip='Redux' className={style.skillIcon} />
                 <FaNodeJs data-tip='Node.js' className={style.skillIcon} />
                 <FaDocker data-tip='Docker' className={style.skillIcon} />
                 <SiMongodb data-tip='MongoDB' className={style.skillIcon} />
                 <FaAws data-tip='AWS' className={style.skillIcon} />
-                <FaGit data-tip='git / github' className={style.skillIcon} />
+                <FaGit data-tip='Git / Github' className={style.skillIcon} />
                 <FaNpm data-tip='Node Package Manager' className={style.skillIcon} />
                 <MdFormatListBulleted data-tip data-for='moreSkills' className={style.skillIcon} />
             </div>
