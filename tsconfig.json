@@ -1,0 +1,14 @@
+{
+    "extends": "@tsconfig/recommended/tsconfig.json",
+    "include": ["typings", "src"],
+    "exclude": ["node_modules", "**/*.spec.ts"],
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "CommonJS",
+        "jsx": "react",
+        "esModuleInterop": true,
+        "noEmit": true,
+        "allowJs": true,
+        "checkJs": true
+    }
+}

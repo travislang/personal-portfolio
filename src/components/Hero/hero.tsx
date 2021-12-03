@@ -5,16 +5,17 @@ import { FaLinkedin } from 'react-icons/fa'
 import { FaEnvelope } from 'react-icons/fa'
 import { FaGithubSquare } from 'react-icons/fa'
 
-const Hero = () => (
+const Hero = (): JSX.Element => (
     <div className={style.root}>
         <div className={style.heroTextContainer}>
             <h1 className={style.heroText}>My name is Travis & I'm</h1>
             <h1 className={style.heroText}>a Full Stack Software Developer.</h1>
             <p className={style.heroPara}>
                 I am passionate about solving interesting problems with code.
-                <br/>
-                Using modern development practices to produce maintainable and scalable software solutions. When I am not building things with software I enjoy golfing,
-                being outdoors, camping and hiking.
+                <br />
+                Using modern development practices to produce maintainable and scalable software
+                solutions. When I am not building things with software I enjoy golfing, being
+                outdoors, camping and hiking.
             </p>
         </div>
         <div className={style.heroContactContainer}>

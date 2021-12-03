@@ -1,4 +1,13 @@
-export const COLORS = {
+type ColorOptions = {
+    light: String
+    dark: string
+}
+
+export interface Colors {
+    [key: string]: ColorOptions
+}
+
+export const COLORS: Colors = {
     text: {
         light: 'hsl(0deg, 0%, 10%)', // white
         dark: 'hsl(0deg, 0%, 100%)', // black
@@ -9,7 +18,7 @@ export const COLORS = {
     },
     blueText: {
         light: '#71747d',
-        dark: '#8b8f9f', 
+        dark: '#8b8f9f',
     },
     background: {
         light: '#fcfcfc',

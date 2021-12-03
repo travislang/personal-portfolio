@@ -1,4 +1,16 @@
-const projects = [
+export type Project = {
+    title: string
+    demo: string
+    github: string
+    videoUrl?: string
+    description: string
+    appInfo1: string
+    appInfo2: string
+    appInfo3: string
+    technologies: string[]
+}
+
+const projects: Project[] = [
     {
         title: 'Ledger Log',
         demo: 'https://ledger-app.com/',

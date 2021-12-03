@@ -7,11 +7,11 @@ import { FaGithub } from 'react-icons/fa'
 import * as styles from './header.module.scss'
 
 const Header = () => {
-    const [ isMobile, setIsMobile ] = useState(false)
+    const [isMobile, setIsMobile] = useState<Boolean>(false)
 
     useEffect(() => {
         console.log('window', window.innerWidth)
-        if(window && window.innerWidth && window.innerWidth < 500) {
+        if (window && window.innerWidth && window.innerWidth < 500) {
             setIsMobile(true)
         }
     }, [])

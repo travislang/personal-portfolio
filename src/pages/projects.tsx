@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC } from 'react'
 
 import { graphql } from 'gatsby'
 
@@ -8,7 +8,7 @@ import ProjectsPage from '../components/projects/projectsPage'
 
 import { root, projectsTitle } from './projects.module.scss'
 
-const Projects = ({ data }) => (
+const Projects: FC = ({ data }: any) => (
     <Layout>
         <SEO title='Projects' />
         <div className={projectsTitle}>PROJECTS</div>

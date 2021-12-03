@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { FC } from 'react'
 
 import { ThemeProvider } from './ThemeContext'
 
-function App({ children }) {
+const App: FC = ({ children }): JSX.Element => {
     return <ThemeProvider>{children}</ThemeProvider>
 }
 

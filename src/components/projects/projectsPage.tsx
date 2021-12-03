@@ -3,7 +3,11 @@ import projects from './projectsInfo'
 
 import ProjectCard from './projectCard'
 
-const ProjectPage = ({ images }) => (
+interface IProps {
+    images: any
+}
+
+const ProjectPage = ({ images }: IProps): JSX.Element => (
     <>
         {projects.map((project, i) => {
             if (project.title === 'Ledger Log') {

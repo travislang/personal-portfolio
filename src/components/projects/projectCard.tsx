@@ -1,6 +1,8 @@
 import React, { useState, useContext, useEffect } from 'react'
 import { ThemeContext } from '../ThemeContext'
 
+import { Project } from './projectsInfo'
+
 import ReactTooltip from 'react-tooltip'
 import Img from 'gatsby-image'
 import Video from './video'
@@ -23,19 +25,26 @@ import { SiPostgresql } from 'react-icons/si'
 import { SiReduxsaga } from 'react-icons/si'
 import { SiMaterialui } from 'react-icons/si'
 
+interface IProps {
+    project: Project
+    image?: any
+    videoUrl?: string | undefined
+}
+
 const MORE_INFO_COLORS = {
     dark: '#5f5e5e',
     light: '#424242',
 }
 
-const ProjectCard = (props) => {
+const ProjectCard = (props: IProps): JSX.Element => {
     const { project, image, videoUrl } = props
 
     const { colorMode } = useContext(ThemeContext)
-    const [moreInfo, setMoreInfo] = useState(false)
+    const [moreInfo, setMoreInfo] = useState<Boolean>(false)
     const [classNames, setClassNames] = useState([style.root])
 
-    const handleClick = () => {
+    const handleClick = (): void => {
+        // ADD LATER? card animation...
         // if (moreInfo) {
         //     setClassNames((arr) => arr.filter((c) => c !== style.flipAnimation))
         //     setClassNames((arr) => [...arr, style.flipAnimationBack])
@@ -46,7 +55,7 @@ const ProjectCard = (props) => {
         setMoreInfo((s) => !s)
     }
 
-    const backgroundStyle = {}
+    const backgroundStyle: React.CSSProperties = {}
 
     if (moreInfo) {
         if (colorMode) {

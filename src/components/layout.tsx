@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
@@ -8,7 +8,7 @@ import '@fontsource/teko/600.css'
 import './layout.css'
 import * as style from './Hero/hero.module.scss'
 
-const Layout = ({ children }) => (
+const Layout: FC = ({ children }) => (
     <StaticQuery
         query={graphql`
             query SiteTitleQuery {

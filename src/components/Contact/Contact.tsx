@@ -5,7 +5,7 @@ import { FaLinkedin } from 'react-icons/fa'
 import { FaEnvelope } from 'react-icons/fa'
 import { FaGithubSquare } from 'react-icons/fa'
 
-const Hero = () => (
+const Contact = () => (
     <div className={style.root}>
         <div className={style.contactTextContainer}>
             <h1 className={style.contactText}>Interested in talking further?</h1>
@@ -18,7 +18,11 @@ const Hero = () => (
         <div className={style.contactContainer}>
             <div className={style.asideText}>CONTACT</div>
             <div className={style.iconsContainer}>
-                <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/travis-james-lang/'>
+                <a
+                    target='_blank'
+                    rel='noreferrer'
+                    href='https://www.linkedin.com/in/travis-james-lang/'
+                >
                     <FaLinkedin className={style.icon} />
                 </a>
                 <a target='_blank' rel='noreferrer' href='https://github.com/travislang'>
@@ -32,4 +36,4 @@ const Hero = () => (
     </div>
 )
 
-export default Hero
+export default Contact
